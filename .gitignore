@@ -1,0 +1,9 @@
+node_modules
+.next
+.DS_Store
+.env
+.env.local
+npm-debug.log*
+public/outputs/*.gif
+public/outputs/*.mp4
+public/outputs/*.webp
