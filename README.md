@@ -33,13 +33,37 @@ First proof of concept for the app: upload an image or GIF, generate a short ima
 
 - Node.js 22+
 - npm 10+
-- Python 3.10+
 - `ffmpeg` installed and available on your shell path
 - `FAL_KEY` set in `.env.local`
 
+Optional:
+
+- none for the first cut
+
 ## Setup
 
-1. Install Node dependencies:
+1. Install dependencies:
 
 ```bash
 npm install
+```
+
+2. Create `.env.local`:
+
+```bash
+FAL_KEY=your_key_here
+```
+
+3. Start the app:
+
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000)
+
+## Notes
+
+- This first version is intentionally synchronous. The request waits for fal to finish the video before assembling the GIF.
+- GIF uploads currently use the first frame as the source image for generation.
+- The current backend targets `fal-ai/ltx-video/image-to-video`, which the fal docs currently price at about $0.02 per video.
