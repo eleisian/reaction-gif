@@ -10,8 +10,6 @@ __pycache__/
 .env.local
 npm-debug.log*
 .codex/
-public/outputs/*.gif
-public/outputs/*.mp4
-public/outputs/*.webp
+public/outputs/
 
 design-md
