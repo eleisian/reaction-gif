@@ -1,9 +1,17 @@
 node_modules
 .next
+.venv
+.venv/
+__pycache__/
+*.pyc
+.tmp/
 .DS_Store
 .env
 .env.local
 npm-debug.log*
+.codex/
 public/outputs/*.gif
 public/outputs/*.mp4
 public/outputs/*.webp
+
+design-md

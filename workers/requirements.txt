@@ -1,0 +1,2 @@
+# The current chroma-key MVP worker uses only Python stdlib plus ffmpeg.
+# Add Python packages here when we introduce OpenCV, SAM/SAM2, or matting.
