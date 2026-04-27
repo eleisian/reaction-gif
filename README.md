@@ -1,6 +1,6 @@
 # Reaction GIF Lab
 
-First proof of concept for the app: upload an image or GIF, generate a short image-to-video reaction clip with fal's `fal-ai/ltx-video/image-to-video`, isolate the subject, and composite the result into a looping GIF.
+First proof of concept for the app: upload an image or GIF, generate a short image-to-video reaction clip with fal's different image to video or video to video generation models, isolate the subject, and composite the result into a looping GIF.
 
 ## Example 
 
@@ -62,8 +62,3 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000)
 
-## Notes
-
-- This first version is intentionally synchronous. The request waits for fal to finish the video before assembling the GIF.
-- GIF uploads currently use the first frame as the source image for generation.
-- The current backend targets `fal-ai/ltx-video/image-to-video`, which the fal docs currently price at about $0.02 per video.
